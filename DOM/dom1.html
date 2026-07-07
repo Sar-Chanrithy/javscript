@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+    <style>
+        /* Hide sections by default */
+        #about, #contact {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="showAbout()">About</button>
+    <button onclick="showContact()">Contact</button>
+
+    <div id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Thy. I am learning JavaScript and Web Development.</p>
+    </div>
+
+    <div id="contact">
+        <h2>Contact</h2>
+        <p>Email: thy@example.com</p>
+        <p>Phone: 012-345-678</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
