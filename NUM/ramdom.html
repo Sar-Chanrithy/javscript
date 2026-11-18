@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number Game</title>
+</head>
+<body>
+
+    <h1>Random Number Game</h1>
+
+    <button onclick="randomNumber()">Play Game</button>
+
+    <h2>Random Number: <span id="rd">0</span></h2>
+    <h2 id="win"></h2>
+
+    <script>
+        function randomNumber() {
+
+            // Random number 0 - 10
+            var rdNum = Math.floor(Math.random() * 11);
+
+            // Reset background and message
+            document.body.style.backgroundColor = "white";
+            document.getElementById("win").innerHTML = "";
+
+            // Check winning number
+            if (rdNum == 1) {
+                document.body.style.backgroundColor = "red";
+                document.getElementById("win").innerHTML = "Win Win";
+            }
+
+            // Show random number
+            document.getElementById("rd").innerHTML = rdNum;
+        }
+    </script>
+
+</body>
+</html>

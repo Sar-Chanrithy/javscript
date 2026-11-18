@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <h1 id="rd">000000000</h1>
+    <h1 id="win">....</h1>
+    <button onclick="randomNumber()">random number</button>
+
+    <script>
+        function randomNumber() {
+            var rdNum = Math.floor(Math.random() * 11);
+
+            if (rdNum == 1) {
+                document.body.style.backgroundColor = "red";
+                document.getElementById("win").innerHTML = "Win Win";
+            }
+            else {
+                document.body.style.backgroundColor = "white";
+                document.getElementById("win").innerHTML = "....";
+            }
+
+            document.getElementById("rd").innerHTML = rdNum;
+        }
+
+        console.log(Math.floor(3.6));
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color</title>
+</head>
+<body>
+
+    <br>
+    <br>
+
+    <button id="chg" onclick="changeColor()">Change Color</button>
+
+    <script>
+        let isChanged = false;
+
+        function changeColor() {
+            if (isChanged == false) {
+                document.body.style.backgroundColor = "blue";
+                isChanged = true;
+            } else {
+                document.body.style.backgroundColor = "white";
+                isChanged = false;
+            }
+        }
+    </script>
+
+</body>
+</html>
