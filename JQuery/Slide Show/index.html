@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Slide Show</title>
+
+    <!-- Local jQuery reference -->
+    <script src="jquery.js"></script>
+
+    <style>
+        #slider {
+            width: 600px;
+            height: 350px;
+            margin: 30px auto 10px auto;
+            overflow: hidden;
+            border: 3px solid black;
+        }
+
+        #slider img {
+            width: 600px;
+            height: 350px;
+            display: none;
+        }
+
+        #slider img:first-child {
+            display: block;
+        }
+
+        .btn, .indicators {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            margin: 5px;
+            background-color: #ddd;
+            color: #333;
+            border-radius: 50%;
+            cursor: pointer;
+            font-weight: bold;
+            user-select: none;
+        }
+
+        .dot.active {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="slider">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1280px-24701-nature-natural-beauty.jpg" data-index="1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTninyEC4E1hIPqlDXlbGN6V_ts1Ei4KZyrz8u_hxWvWBGN97IlbCVKTAf6&s=10" data-index="2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLFSeIMxHUAtlkEKWFOpKWJmU5MtvaFkV8bfadyB4nVA&s=10" data-index="3">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8xlwvg8SwnxnjT6VKe_JlnYHQPssOe0Nzj6xmlr88A8xes2PNNkK3FPw&s=10" data-index="4">
+</div>
+
+<div class="indicators">
+    <span class="dot active" data-slide="1">1</span>
+    <span class="dot" data-slide="2">2</span>
+    <span class="dot" data-slide="3">3</span>
+    <span class="dot" data-slide="4">4</span>
+</div>
+
+<div class="btn">
+    <button id="prev">Previous</button>
+    <button id="toggle">Pause</button>
+    <button id="next">Next</button>
+</div>
+
+<!-- Load script files -->
+<script src="script.js"></script>
+<script src="script2.js"></script>
+
+</body>
+</html>
