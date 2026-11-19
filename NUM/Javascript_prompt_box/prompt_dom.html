@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prompt Example</title>
+</head>
+<body>
+
+    <h2 id="status"></h2>
+
+    <script>
+        let name = prompt("What is your name?");
+
+        if (name !== null && name.trim() !== "") {
+            document.getElementById("status").textContent =
+                `Hello, ${name}!`;
+        } else {
+            document.getElementById("status").textContent =
+                "Hello, Guest!";
+        }
+    </script>
+
+</body>
+</html>

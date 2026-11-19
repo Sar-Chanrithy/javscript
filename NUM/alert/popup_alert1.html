@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Popup</title>
+</head>
+<body>
+
+    <h2>JavaScript Popup Examples</h2>
+
+    <button onclick="showAlert()">Alert</button>
+    <button onclick="showConfirm()">Confirm</button>
+    <button onclick="showPrompt()">Prompt</button>
+
+    <script>
+        function showAlert() {
+            alert("Hello World!");
+        }
+
+        function showConfirm() {
+            let result = confirm("Are you sure?");
+
+            if (result) {
+                alert("You clicked OK");
+            } else {
+                alert("You clicked Cancel");
+            }
+        }
+
+        function showPrompt() {
+            let name = prompt("Enter your name:");
+
+            if (name !== null) {
+                alert("Hello " + name);
+            }
+        }
+    </script>
+
+</body>
+</html>

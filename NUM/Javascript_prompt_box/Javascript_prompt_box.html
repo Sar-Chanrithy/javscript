@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prompt Box</title>
+</head>
+<body>
+
+    <button onclick="showPrompt()">Click Me</button>
+
+    <script>
+        function showPrompt() {
+            let person = prompt("Enter your name:", "Harry Potter");
+
+            if (person != null) {
+                alert("Hello " + person);
+            } else {
+                alert("You clicked Cancel!");
+            }
+        }
+    </script>
+
+</body>
+</html>
